@@ -1,5 +1,6 @@
-from Attendence import register, view_attendence, mark_attendence
+from Attendence import register, view_attendence, mark_attendence, students
 
+students.clear()
 
 def test_cases():
     assert register("Gayathri", "gayathri@gmail.com", "12345678") == "Email already exists"
