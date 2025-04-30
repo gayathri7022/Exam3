@@ -10,7 +10,8 @@ def register(name, email, password):
     if not email in students:
         students[email] = {"name" : name, "password" : password, "ID" : "001", "presence" : []}
         return "Registration successfull"
-    return "Email already exists"
+    else:
+        return "Email already exists"
 
 def login(email, password):
     if email not in students:
@@ -35,7 +36,7 @@ def view_attendence(studentid, email):
     return f"Attendence of {studentid} : {students[email]["presence"]}"
 
 
-
+print(students)
 print(register("Gayathri", "gayathri@gmail.com", "12345678"))
 print(mark_attendence("001", "gayathri@gmail.com", "30-04-2025"))
 print(view_attendence("001", "gayathri@gmail.com"))
