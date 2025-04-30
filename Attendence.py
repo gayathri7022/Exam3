@@ -39,5 +39,5 @@ def view_attendence(studentid, email):
 print(students)
 print(register("Gayathri", "gayathri@gmail.com", "12345678"))
 print(mark_attendence("001", "gayathri@gmail.com", "30-04-2025"))
-print(view_attendence("001", "gayathri@gmail.com"))
+
 
